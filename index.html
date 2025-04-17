@@ -3,20 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Red+Hat+Display">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./src/output.css">
   <title>Frontend Mentor | Order summary card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
 <body>
 
-  Order Summary
+  <!-- Order Summary
 
   You can now listen to millions of songs, audiobooks, and podcasts on any 
   device anywhere you like!
@@ -27,11 +24,33 @@
   Change
 
   Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  Cancel Order -->
+  <div class="h-screen bg-pale-blue flex justify-center items-center">
+ <div class="w-80  ">
+  <img class="rounded-tl-2xl rounded-tr-2xl" src="./images/illustration-hero.svg" alt="pattern-background-mobile">
+
+  <div class="flex flex-col  items-center gap-6 p-7 bg-white   rounded-bl-2xl rounded-br-2xl">
+  <p class="text-dark-blue font-black text-[20px] ">Order Summary</p>
+  <p class="text-desaturated-blue text-center  text-pretty ">
+    You can now listen to millions of songs, audiobooks, and podcasts on any 
+  device anywhere you like!
+  </p>
+  <div class="flex justify-between gap-6 items-center bg-very-pale-blue [&-p]:text-[16px]">
+    <img class="" src="./images/icon-music.svg" alt="icon-music">
+    <p class="text-black font-bold ">Annual Plan
+    <span class="text-desaturated-blue font-medium ">  $59.99/year</span>
+   </p>
+    <a class="underline text-brightblue font-bold hover:no-underline hover:cursor-pointer hover:text-desaturated-blue" href="#">Change</a>
   </div>
+  <button class="rounded-lg bg-brightblue text-white w-full h-10 font-bold text-[14px] hover:cursor-pointer hover:opacity-75">
+    Proceed to Payment
+  </button>
+  <button class="rounded-lg bg-very-pale-blue text-desaturated-blue w-full h-10 font-bold text-[14px] hover:cursor-pointer hover:text-dark-blue">
+    Cancel Order
+  </button>
+  </div>
+ </div>
+</div>
+  
 </body>
 </html>
